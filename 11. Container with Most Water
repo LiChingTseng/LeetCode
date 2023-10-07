@@ -4,9 +4,6 @@ class Solution:
         right = len(height)-1
         max_area = 0
 
-        '''
-        the highest line follow by the second highest line
-        '''
         while left < right:
             if (right-left) * min(height[left], height[right]) > max_area:
                 max_area = (right-left) * min(height[left], height[right])
